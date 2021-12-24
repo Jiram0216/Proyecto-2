@@ -1,0 +1,208 @@
+:root {
+    // --fuenteHeading: 'PT Sans', sans-serif;
+    // --fuenteParrafos: 'Open Sans', sans-serif;
+
+    --blanco: #ffffff;
+    --negro: #000000;
+}
+// html {
+//     box-sizing: border-box;
+//     font-size: 62.5%;
+// }
+// *, *:before, *:after{
+//     box-sizing: inherit;
+// }
+// body{
+//     font-family: var(--fuenteParrafos);
+//     font-size: 1.5rem;
+//     line-height: 2;
+// }
+// h1{
+//     font-size: 3.8rem;
+// }
+// h2{
+//     font-size: 2.8rem;
+// }
+// h3{
+//     font-size: 1.8rem;
+// }
+h1,h2,h3 {
+    text-align: center;
+}
+.no-margin {
+    margin: 0;
+}
+.contenedor {
+    width: min(90%, 120rem);
+    margin: 0 auto;
+}
+.fondo{
+    border-top: solid 1px var(--negro);
+    margin-top: 2rem;
+}
+.boton {
+    display: block;
+    text-decoration: none;
+    // font-family: var(--fuenteHeading);
+    color: var(--blanco);
+    text-align: center;
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0.25rem 0;
+}
+.boton2 {
+    display: block;
+    text-decoration: none;
+    // font-family: var(--fuenteHeading);
+    color: var(--blanco);
+    text-align: center;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: .50rem 0;
+}
+.boton3 {
+    display: block;
+    text-decoration: none;
+    // font-family: var(--fuenteHeading);
+    color: var(--blanco);
+    text-align: left;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 1rem 0;
+}
+@media (min-width: 768px) {
+    .boton{
+        display: inline-block;
+    }
+}
+.degradado {
+    position: absolute;
+    background-color: rgba(0,0,0,.50); 
+    width: 100%;
+    height: 100%;
+}
+.grid1 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+}
+@media (min-width: 768px){
+    .grid2{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 4rem;
+    }
+}
+.grid3{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+}
+@media(min-width:500px) {
+    .grid3{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media(min-width:768px) {
+    .grid3{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+.grid4{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+@media(min-width:768px) {
+    .grid4{
+        display: grid;
+        grid-template-columns: 1fr 9fr;
+    }
+}
+    .grid5{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+    }
+/* in -- seleccion de plantas */
+.contenido{
+    background-image: url(../../public/images/img1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40rem;
+    position: relative;
+}
+.contenido__text{
+    color: var(--blanco);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.nave {
+    padding: 0rem;
+}
+.nave__nombre {
+    text-align: center;
+    font-size: 1.8rem; 
+}
+.nave__imagen {
+    width: 100%;
+}
+.nave__info {
+    margin: 0 0;
+    text-align: center;
+}
+.contenido--pie {
+    background-color: #f8fafc;
+    padding: 3rem 0;
+    margin-top: 4rem;
+}
+.contenido--pie__text {
+    text-align: center;
+}
+.boton--primario {
+    color: var(--blanco);
+}
+/* end -- seleccion de plantas*/
+/* in -- nave1*/
+.enlaces{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column
+}
+.producto {
+    background-color:#EFEFEF;
+    padding: 0rem;
+}
+.producto__imagen {
+    align-items: center;
+    width: 100%;
+}
+.producto__informacion{
+    margin: 0 0;
+}
+.producto__nombre {
+    text-align: center;
+    font-size: 1.8rem;
+}
+.boton--secundario{
+    background-color: var(--negro);
+}
+/* end -- nave 1 */
+/* in -- troquel T01 */
+.maquina__texto{
+    text-align: justify;
+}
+.lista {
+    
+    padding: 0;
+}
+
+/* end -- Troquel T01 */
