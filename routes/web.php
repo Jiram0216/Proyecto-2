@@ -87,8 +87,11 @@ Route::get('/maquinas/24', [App\Http\Controllers\MaquinasController::class, 'com
 Route::get('/maquinas/25', [App\Http\Controllers\MaquinasController::class, 'compresor2'])->name('maquinas.compresor2');
 // Rutas de selladora
 Route::get('/maquinas/26', [App\Http\Controllers\MaquinasController::class, 'selladora1'])->name('maquinas.selladora1');
-// Ruta de transformador
+// Ruta de transformador nave 1
 Route::get('/maquinas/27', [App\Http\Controllers\MaquinasController::class, 'transformador1'])->name('maquinas.transformador1');
+// Ruta de compresor nave 2 
+Route::get('/maquinas/28', [App\Http\Controllers\MaquinasController::class, 'compresor3'])->name('maquinas.compresor3');
+Route::get('/maquinas/29', [App\Http\Controllers\MaquinasController::class, 'compresor4'])->name('maquinas.compresor4');
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 

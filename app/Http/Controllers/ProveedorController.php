@@ -58,7 +58,8 @@ class ProveedorController extends Controller
             'categoria' => 'required',
             'contacto' => 'required',
             'correo' => 'required',
-            'telefono' => 'required'
+            'telefono' => 'required',
+            'observacion' => 'required'
         ]);
         // Si el usuario sube una imagen
         if($request ['imagen']){
@@ -79,7 +80,8 @@ class ProveedorController extends Controller
             'contacto' =>$data['contacto'],
             'correo' =>$data['correo'],
             'telefono' =>$data['telefono'],
-            'imagen'=> $data ['imagen'] ?? null,
+            'imagen'=> $data['imagen'] ?? null,
+            'observacion'=> $data['observacion'],
             'categoria_id' =>$data['categoria'],
         ]);
         
@@ -128,7 +130,8 @@ class ProveedorController extends Controller
             'categoria' => 'required',
             'contacto' => 'required',
             'correo' => 'required',
-            'telefono' => 'required'
+            'telefono' => 'required',
+            'observacion' => 'required'
         ]);
         // Asignar los valores
         $proveedor->empresa = $data['empresa'];
@@ -136,7 +139,7 @@ class ProveedorController extends Controller
         $proveedor->correo = $data['correo'];
         $proveedor->telefono = $data['telefono'];
         $proveedor->categoria_id = $data['categoria'];
-        
+        $proveedor->observacion= $data['observacion'];
         // Si el usuario sube una nueva imagen
         if(request('imagen')){
             // Obtener la ruta de la imagen a subir en la base de datos

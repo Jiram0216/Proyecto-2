@@ -67,12 +67,23 @@
                 <span class="invalid-feedback d-block" role="alert"><strong>{{$message}}</strong></span>
                 @enderror
             </div>
-            {{-- Telefono de Concato --}}
+            {{-- Telefono de Contacto --}}
             <div class="form-group">
                 <label for="telefono">Teléfono de Contacto:</label>
                 <input type="text" name="telefono" class="form-control @error('telefono') is-invalid @enderror"
                     id="telefono" placeholder="Telefono de Contacto" value={{old('telefono')}}>
                 @error('telefono')
+                <span class="invalid-feedback d-block" role="alert"><strong>{{$message}}</strong></span>
+                @enderror
+            </div>
+            {{-- observacion de proveedor --}}
+            <div class="form-group">
+                <label for="observacion">Observación:</label>
+                <input id="observacion" type="hidden" name="observacion" value="{{old('observacion')}}">
+                {{-- Agregando trix editor a mi observacion de orden de trabajo --}}
+                <trix-editor class="form-control @error('observacion') is-invalid @enderror" input="observacion">
+                </trix-editor>
+                @error('observacion')
                 <span class="invalid-feedback d-block" role="alert"><strong>{{$message}}</strong></span>
                 @enderror
             </div>

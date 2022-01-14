@@ -10,7 +10,7 @@ class Proveedor extends Model
     use HasFactory;
     // Campos a agregaran a DB
     protected $fillable = [
-        'empresa', 'contacto', 'correo', 'telefono', 'user_id', 'categoria_id', 'imagen'
+        'empresa', 'contacto', 'correo', 'telefono', 'user_id', 'categoria_id', 'imagen', 'observacion',
     ];
 
     // Obtiene la categoria del proveedor via FK

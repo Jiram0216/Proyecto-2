@@ -5,54 +5,57 @@
 <main class="contenedor contenido--principal">
     <div class="grid2">
         <article class="maquina">
-            <h2 id="layout" class="titulo_mayusculas">Maquina</h2>
-            <img src="img/img1.jpg" alt="TRAFO01" class="producto__imagen">
-            <p class="maquina__texto"> También conocidas como máquinas plegadoras, 
-                las prensas dobladoras están especialmente fabricada para moldear y 
-                curvar hojas, placas o piezas de metal. </p>
+            <div class="padre">
+                <h2 class="hijo">Maquina</h2>
+            </div>
+            <img src="{{ url('/images/TRANFO1_01.PNG')}}" alt="TRANFO_01" class="producto__imagen mt-3">
         </article>
         <aside class="asidebar1">
-            <h2 class="titulo_mayusculas">Caracteristicas</h2>
+            <div class="padre">
+                <h2 class="hijo">Caracteristicas</h2>
+            </div>
             <ul class="lista">
-                <li class="boton3 boton--secundario">1.-Marca: Titan</li>
-                <li class="boton3 boton--secundario">2.-Modelo: P3P75T10</li>
-                <li class="boton3 boton--secundario">3.-Capacidad: 75 Toneladas</li>
-                <li class="boton3 boton--secundario">4.-Garganta: 10 ft"</li>
-                <li class="boton3 boton--secundario">5.-Potencia: Motor 7 Hp</li>
-                <li class="boton3 boton--secundario">6.-Voltaje: 220 voltios</li>
-                <li class="boton3 boton--secundario">7.-Transmisión: Hidráulica</li>
-                <li class="boton3 boton--secundario">8.-3 Pistones: Diámetro 5 In</li>
+                <li class="btn btn-outline-dark btn-block mt-3 text-uppercase font-weight-bold">1.-Proveedor: Volto</li>
+                <li class="btn btn-outline-dark btn-block mr-2 text-uppercase font-weight-bold">2.-Contacto: Francisco Torres</li>
+                <li class="btn btn-outline-dark btn-block mr-2 text-uppercase font-weight-bold">3.-Teléfono: 8115799050</li>
+                <li class="btn btn-outline-dark btn-block mr-2 text-uppercase font-weight-bold">4.-Instalación: 17/07/21</li>
+                <li class="btn btn-outline-dark btn-block mr-2 text-uppercase font-weight-bold">5.-Capacidad: 150KVA</li>
+                <li class="btn btn-outline-dark btn-block mr-2 text-uppercase font-weight-bold">6.-Marca: Prolec</li>
+                <li class="btn btn-outline-dark btn-block mr-2 text-uppercase font-weight-bold">7.-Modelo: Djn616</li>
+                {{-- Version anterior --}}
+                {{-- <li class="boton3 boton--secundario">7.-Voltaje: 220 voltios</li> --}}
             </ul>
         </aside>
         <article class="maquina">
-            <h2 class="titulo_mayusculas">Componentes</h2>
-            <img src="img/img2.jpg" alt="TRAFO01" class="producto__imagen margin">
-            
+            <div class="padre">
+                <h2 class="hijo">Componentes</h2>
+            </div>
+            <img src="{{ url('/images/TRANFO1_02.PNG')}}" alt="Troquel T01" class="producto__imagen mt-3">
+
         </article>
-        <aside class="asidebar1">
-            <h2 class="titulo_mayusculas">Componentes</h2>
+        {{-- <aside class="asidebar1">
+            <div class="padre">
+                <h2 class="hijo">Componentes</h2>
+            </div>
             <ul class="lista">
-                <li class="boton3 boton--secundario">1.-Motor eléctrico N°1: 4 HP</li>
-                <li class="boton3 boton--secundario">2.-Motor eléctrico N°2: 2 HP</li>
-                <li class="boton3 boton--secundario">3.-Armazón</li>
-                <li class="boton3 boton--secundario">4.-Pistones hidráulicos (3)</li>
-                <li class="boton3 boton--secundario">5.-Bomba hidráulica N°1</li>
-                <li class="boton3 boton--secundario">6.-Bomba hidráulica N°2</li>
-                <li class="boton3 boton--secundario">7.-Cortina</li>
-                <li class="boton3 boton--secundario">8.-Control de cortina</li>
-                <li class="boton3 boton--secundario">9.-Tornillo de ajuste de grados</li>
-                <li class="boton3 boton--secundario">10.-Mordazas</li>
-                <li class="boton3 boton--secundario">11.-Bancada</li>
-                <li class="boton3 boton--secundario">12.-Gabinete eléctrico</li>
-                <li class="boton3 boton--secundario">13.-Depósito de aceite y sistema hidráulico</li>
-                <li class="boton3 boton--secundario">14.-Tablero de ciclos</li>
-                <li class="boton3 boton--secundario">15.-Control de bancada</li>
+                <li class="btn btn-outline-dark btn-block mt-3 text-uppercase font-weight-bold">1.-Motor eléctrico</li>
+                <li class="btn btn-outline-dark btn-block mr-2 text-uppercase font-weight-bold">2.-Volante</li>
+                <li class="btn btn-outline-dark btn-block mr-2 text-uppercase font-weight-bold">3.-Martinete</li>
+                <li class="btn btn-outline-dark btn-block mr-2 text-uppercase font-weight-bold">4.-Mesa de soporte de dado</li>
+                <li class="btn btn-outline-dark btn-block mr-2 text-uppercase font-weight-bold">5.-Armazón</li>
+                <li class="btn btn-outline-dark btn-block mr-2 text-uppercase font-weight-bold">6.-Gabinete eléctrico</li>
+                <li class="btn btn-outline-dark btn-block mr-2 text-uppercase font-weight-bold">7.-Control de encendido y apagado</li>
+                <li class="btn btn-outline-dark btn-block mr-2 text-uppercase font-weight-bold">8.-Pedal</li>
+                
             </ul>
-        </aside>
-    </div><!--grid2-->
+        </aside> --}}
+    </div>
+    <!--grid2-->
     <div class="grid3 fondo">
         <article>
-            <h2 class="titulo_mayusculas">Mantenimiento</h2>
+            <div class="padre">
+                <h2 class="hijo">Mantenimiento</h2>
+            </div>
             <ul class="lista">
                 <li>Orden de trabajo</li>
                 <li>Ultimo mantenimiento</li>
@@ -60,7 +63,9 @@
             </ul>
         </article>
         <article>
-            <h2 class="titulo_mayusculas">Proveedores</h2>
+            <div class="padre">
+                <h2 class="hijo">Proveedores</h2>
+            </div>
             <ul class="lista">
                 <li>Nombre</li>
                 <li>Contacto</li>
@@ -71,14 +76,16 @@
             </ul>
         </article>
         <article>
-            <h2 class="titulo_mayusculas">Costos</h2>
-            
+            <div class="padre">
+                <h2 class="hijo">Costos</h2>
+            </div>
+
         </article>
-    </div><!--grid3-->
-</main>
-<footer class="contenido--pie">
-    <div class="contenido--pie__text contenedor">
-        <a class="boton boton--primario" href="{{route('maquinas.planta1')}}"><h2>Regresar</h2></a>
     </div>
-</footer> <!--contenido--pie-->
+    <!--grid3-->
+</main>
+@endsection
+{{-- Creando el footer --}}
+@section('footer')
+    @include('ui.footer')
 @endsection

@@ -160,4 +160,14 @@ class MaquinasController extends Controller
     {
         return view('maquinas.transformador1');
     }
+    // Inicio nave 2
+    public function compresor3()
+    {
+        return view('maquinas.compresor3');
+    }
+
+    public function compresor4()
+    {
+        return view('maquinas.compresor4');
+    }
 }

@@ -43,7 +43,7 @@
             <div class="padre">
                 <h2 id="layout" class="hijo mt-3">Layout</h2>
             </div>
-            <img src="{{url('/images/img1.jpg')}}" alt="Troquel T01" class="producto__imagen">
+            <img src="{{url('/images/LN1.PNG')}}" alt="Layout Nave 1" class="producto__imagen">
         </article>
         <aside class="asidebar1">
             <div class="padre">
@@ -294,7 +294,7 @@
             <!--producto-->
             <article class="producto">
                 <a href="{{route('maquinas.roladora4')}}"> <img class="producto__imagen"
-                        src="{{url('/images/Nav1.jpg')}}" alt="Curvatron CV"> </a>
+                        src="{{url('/images/CUV1_01.PNG')}}" alt="Curvatron CV"> </a>
                 <div class="producto__informacion">
                     <p class="producto__nombre">Curvatron CV</p>
                 </div>
@@ -340,7 +340,7 @@
         <div class="grid3">
             <article class="producto">
                 <a href="{{route('maquinas.compresor1')}}"> <img class="producto__imagen"
-                        src="{{url('/images/Nav1.jpg')}}" alt="Compresor C1"> </a>
+                        src="{{url('/images/COMP1_01.PNG')}}" alt="Compresor C1"> </a>
                 <div class="producto__informacion">
                     <p class="producto__nombre">C1</p>
                 </div>
@@ -348,7 +348,7 @@
             <!--producto-->
             <article class="producto">
                 <a href="{{route('maquinas.compresor2')}}"> <img class="producto__imagen"
-                        src="{{url('/images/Nav2.jpg')}}" alt="Compresor C2"> </a>
+                        src="{{url('/images/COMP2_01.PNG')}}" alt="Compresor C2"> </a>
                 <div class="producto__informacion">
                     <p class="producto__nombre">C2</p>
                 </div>
@@ -386,7 +386,7 @@
         <div class="grid3">
             <article class="producto">
                 <a href="{{route('maquinas.transformador1')}}"> <img class="producto__imagen"
-                        src="{{url('/images/Nav2.jpg')}}" alt="Selladora TS-NS3000"> </a>
+                        src="{{ url('/images/TRANFO1_01.PNG')}}" alt="Selladora TS-NS3000"> </a>
                 <div class="producto__informacion">
                     <p class="producto__nombre">TRAFO01</p>
                 </div>

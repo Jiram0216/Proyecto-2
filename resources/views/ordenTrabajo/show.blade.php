@@ -20,7 +20,7 @@
         <div>
             {{-- Folio --}}
             <p>
-                <span class="font-weight-bold text-primary float-right">Folio: {{$ordenTrabajo->id + 1500}} </span>
+                <span class="font-weight-bold text-primary float-right grande">Folio: {{$ordenTrabajo->id + 1500}} </span>
             </p>
         </div>
         <div>

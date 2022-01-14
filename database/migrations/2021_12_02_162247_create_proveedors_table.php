@@ -25,6 +25,7 @@ class CreateProveedorsTable extends Migration
             $table->string('contacto');
             $table->string('correo');
             $table->string('telefono');
+            $table->text('observacion');
             $table->string('imagen')->nullable();
             // Refrenciando user_id  a id como una llave foranea de la tabla users
             $table->foreignId('user_id')->references('id')->on('users')->comment('El usuario que crea un nuevo proveedor');

@@ -77,7 +77,18 @@
                 <span class="invalid-feedback d-block" role="alert"><strong>{{$message}}</strong></span>
                 @enderror
             </div>
-            {{-- Imagen de la orden de trabajo --}}
+            {{-- Observacion del proveedor --}}
+            <div class="form-group">
+                <label for="observacion">Observación:</label>
+                <input id="observacion" type="hidden" name="observacion" value="{{$proveedor->observacion}}">
+                {{-- Agregando trix editor a mi observacion de orden de trabajo --}}
+                <trix-editor class="form-control @error('observacion') is-invalid @enderror" input="observacion">
+                </trix-editor>
+                @error('observacion')
+                <span class="invalid-feedback d-block" role="alert"><strong>{{$message}}</strong></span>
+                @enderror
+            </div>
+            {{-- Imagen de proveedor --}}
             <div class="form-group">
                 <label for="imagen">Elige la Imagen:</label>
                 <input id="imagen" type="file" class="form-control @error('imagen') is-invalid @enderror" name="imagen">

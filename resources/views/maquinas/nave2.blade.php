@@ -42,7 +42,7 @@
             <div class="padre">
                 <h2 id="layout" class="hijo mt-3">Layout</h2>
             </div>
-            <img src="{{url('/images/img1.jpg')}}" alt="Troquel T01" class="producto__imagen">
+            <img src="{{url('/images/LN2.png')}}" alt="Layout Nave 2" class="producto__imagen">
         </article>
         <aside class="asidebar1">
             <div class="padre">
@@ -192,14 +192,14 @@
     </div>
     <div class="grid3">
         <article class="producto">
-            <a href="compresor3.html"> <img class="producto__imagen" src="{{url('/images/Nav2.jpg')}}" alt="Compresor C3"> </a>
+            <a href="{{route('maquinas.compresor3')}}"> <img class="producto__imagen" src="{{url('/images/COMP3_01.PNG')}}" alt="Compresor C3"> </a>
             <div class="producto__informacion">
                 <p class="producto__nombre">Compresor C3</p>
             </div>
         </article>
         <!--producto-->
         <article class="producto">
-            <a href="compresor4.html"> <img class="producto__imagen" src="{{url('/images/Nav2.jpg')}}" alt="Compresor C4"> </a>
+            <a href="{{route('maquinas.compresor4')}}"> <img class="producto__imagen" src="{{url('/images/COMP4_01.PNG')}}" alt="Compresor C4"> </a>
             <div class="producto__informacion">
                 <p class="producto__nombre">Compresor C4</p>
             </div>

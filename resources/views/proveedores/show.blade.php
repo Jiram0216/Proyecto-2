@@ -26,7 +26,7 @@
         <h2 class="text-center mb-4 bg-primary text-white">Visualización del proveedor</h2>
         <div class="receta-meta p-3">
             <p class="float-right">
-                <span class="font-weight-bold text-info lead">Folio:  </span>
+                <span class="font-weight-bold text-info lead grande">Folio:  </span>
                 {{$proveedor->id}}
             </p>
             <p class="">
@@ -34,7 +34,7 @@
                 {{$proveedor->empresa}}
             </p>
             <p>
-                <span class="font-weight-bold text-info lead">Categoria del Proveedor: </span>
+                <span class="font-weight-bold text-info lead">Categoría del proveedor: </span>
                 {{$proveedor->categoria->nombre}}
             </p>
             <p>
@@ -42,12 +42,15 @@
                 {{$proveedor->contacto}}
             </p>
             <p>
-                <span class="font-weight-bold text-info lead">Correo Electronico del Proveedor: </span>
+                <span class="font-weight-bold text-info lead">Correo electrónico del proveedor: </span>
                 {{$proveedor->correo}}
             </p>
             <p>
                 <span class="font-weight-bold text-info lead">Telefono del Proveedor: </span>
                 {{$proveedor->telefono}}
+            </p>
+            <p>
+                <span class="font-weight-bold text-info lead">Observaciones: </span> {!!$proveedor->observacion!!}
             </p>
             <div class="mb-5">
                 {{-- Fecha --}}
@@ -55,7 +58,7 @@
                     @php
                     $fecha = $proveedor->created_at
                     @endphp
-                    <span class="font-weight-bold text-info ">Fecha de Creación: </span>
+                    <span class="font-weight-bold text-info">Fecha de Creación: </span>
                     <fecha-orden fecha="{{$fecha}}"></fecha-orden>
                 </p>
             </div>
